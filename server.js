@@ -5,7 +5,11 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
-  res.send(`<h1>Free Code Camp Image Search</h1>`)
+  res.send(`
+    <div style="height:100vh;display:flex;justify-content:center;align-items:center;color:#777;">
+      <h1>Free Code Camp Image Search API</h1>
+    </div>
+  `)
 })
 
 app.get('/api/imagesearch/:search', (req, res) => {
